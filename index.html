@@ -66,13 +66,56 @@
         </div>
       </section>
       <!-- backdrop -->
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal">
           <button type="button" class="btn-close pointer" data-modal-close>
-            <svg class="ico-btn">
+            <svg class="ico-btn" width="24" height="24">
               <use href="./images/sprite.svg#icon-close-black"></use>
             </svg>
           </button>
+          <div class="modal-box">
+            <p class="modal-title">
+              Leave your contacts and we will call you back
+            </p>
+            <form class="modal-form">
+              <label class="label-title"
+                >Name<input
+                  type="text"
+                  name="Name"
+                  class="modal-input"
+                  placeholder=""
+                  autofocus
+              /></label>
+              <label class="label-title"
+                >Phone<input
+                  type="text"
+                  name="Phone"
+                  class="modal-input"
+                  placeholder=""
+              /></label>
+              <label class="label-title"
+                >Email<input
+                  type="text"
+                  name="Email"
+                  class="modal-input"
+                  placeholder=""
+              /></label>
+              <label class="label-title"
+                >Comment<input
+                  type="text"
+                  name="Comment"
+                  class="modal-input modal-comment"
+                  placeholder="text input"
+              /></label>
+            </form>
+            <form class="form-privacy">
+              <label class="label-title">
+                <input type="checkbox" name="privacy" value="" />
+                I accept the terms and conditions of the Privacy Policy
+              </label>
+            </form>
+            <button class="btn-send" type="button">Send</button>
+          </div>
         </div>
       </div>
       <!--  section feature -->
