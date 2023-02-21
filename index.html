@@ -73,67 +73,69 @@
               <use href="./images/sprite.svg#icon-close-black"></use>
             </svg>
           </button>
-          <div class="modal-box">
-            <p class="modal-title">
-              Leave your contacts and we will call you back
-            </p>
-            <form class="modal-form">
-              <label class="label-title">Name</label>
-              <div class="input-wrap">
-                <input
-                  type="text"
-                  name="Name"
-                  class="modal-input"
-                  placeholder=""
-                  autofocus
-                /><svg class="" width="18" height="20">
-                  <use href="./images/sprite.svg#icon-person"></use>
+          <!-- form -->
+          <p class="modal-title">
+            Leave your contacts and we will call you back
+          </p>
+          <form class="modal-form">
+            <label class="label-title" for="name">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="modal-input"
+                placeholder=""
+              /><svg class="" width="18" height="20">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+            </div>
+            <label class="label-title" for="tel">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                class="modal-input"
+                placeholder=""
+              /><svg class="" width="18" height="24">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+            </div>
+            <label class="label-title" for="email">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="modal-input"
+                placeholder=""
+              /><svg class="" width="18" height="24">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+            </div>
+            <label class="label-title" for="comment">Comment</label>
+            <div>
+              <textarea
+                type="comment"
+                name="comment"
+                id="comment"
+                class="modal-input modal-comment"
+                placeholder="Text input"></textarea>
+            </div>
+          </form>
+          
+            
+              <div class="privacy">
+                <svg class="" width="18" height="24">
+                  <use href="./images/sprite.svg#icon-ok"></use>
                 </svg>
-              </div>
-              <label class="label-title">Phone</label>
-              <div class="input-wrap">
-                <input
-                  type="text"
-                  name="Phone"
-                  class="modal-input"
-                  placeholder=""
-                  autofocus
-                /><svg class="" width="18" height="24">
-                  <use href="./images/sprite.svg#icon-phone"></use>
-                </svg>
-              </div>
-              <label class="label-title">Email</label>
-              <div class="input-wrap">
-                <input
-                  type="text"
-                  name="Email"
-                  class="modal-input"
-                  placeholder=""
-                  autofocus
-                /><svg class="" width="18" height="24">
-                  <use href="./images/sprite.svg#icon-email"></use>
-                </svg>
-              </div>
-              <label class="label-title">Comment</label>
-              <div class="input-wrap">
-                <input
-                  type="text"
-                  name="Comment"
-                  class="modal-input modal-comment"
-                  placeholder="Text input"
-                />
-              </div>
-            </form>
-            <form class="form-privacy">
-              <label class="label-title">
-                <p>
-                  <input type="checkbox" name="privacy" value="" />
-                  I accept the terms and conditions of the Privacy Policy
-                </p>
-              </label>
-            </form>
-            <button class="btn-send" type="button">Send</button>
-          </div>
+              <p class="label-title privacy-text">
+                I accept the terms and conditions of the <a href="">Privacy Policy<a >
+              </p></div>
+            
+          
+          <button class="btn-send" type="submit">Send</button>
         </div>
       </div>
       <!--  section feature -->
