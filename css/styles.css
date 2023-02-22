@@ -220,10 +220,14 @@ body {
   position: absolute;
   right: 24px;
   top: 24px;
-  background: #e7e9fc;
+  background: var(--footer-text-color);
   border: 1px solid var(--icon-modal);
   border-radius: 50%;
   padding: 1px 7px 2px 7px;
+}
+.btn-close:hover {
+  background: var(--accent-color);
+  fill: var(--footer-text-color);
 }
 .ico-btn {
   width: 8px;
@@ -282,7 +286,7 @@ body {
 }
 .modal-comment {
   height: 120px;
-  padding-left: 16px;
+  padding-left: 12px;
   padding-top: 8px;
 }
 .modal-comment::placeholder {
@@ -298,8 +302,8 @@ body {
   color: #8e8f99;
 }
 .btn-send {
-  margin-left: 119px;
-  margin-right: 120px;
+  margin-left: 95px;
+  margin-right: 96px;
   margin-top: 24px;
   width: 169px;
   height: 56px;
@@ -314,8 +318,7 @@ body {
 .privacy {
   display: flex;
   align-items: center;
-  padding-left: 24px;
-  padding-right: 24px;
+  
 }
 .privacy-text {
   margin-left: 8px;
