@@ -224,8 +224,12 @@ body {
   border: 1px solid var(--icon-modal);
   border-radius: 50%;
   padding: 1px 7px 2px 7px;
+  transition-property: background, fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
-.btn-close:hover {
+.btn-close:hover,
+.btn-close:focus {
   background: var(--accent-color);
   fill: var(--footer-text-color);
 }
@@ -258,6 +262,9 @@ body {
   left: 12px;
   transform: translateY(-50%);
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .modal-input {
   width: 360px;
@@ -269,6 +276,9 @@ body {
   outline: none;
   margin-top: 4px;
   margin-bottom: 8px;
+  transition-property: border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 .modal-form input:focus,
 .modal-form textarea:focus {
@@ -314,26 +324,40 @@ body {
   border-radius: 4px;
   border-color: transparent;
   cursor: pointer;
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
-.checkbox {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.btn-send:hover,
+.btn-send:focus {
+  background: var(--accent-color);
+}
+
+.checkbox:checked + .privacy-text::before {
+  background: var(--accent-color);
+  border: none;
+  /* background-image: url(../images/sprite.svg#icon-check); */
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .privacy {
   display: flex;
   align-items: center;
-  
 }
 .privacy-text {
-  margin-left: 8px;
+  display: flex;
+  gap: 8px;
+}
+.privacy-text::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--dark-bg-color);
+  border-radius: 2px;
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
 }
 
 /* section feature */
@@ -545,6 +569,13 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-white-color);
+  transition-property: background;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing);
+}
+.btn-subs:focus,
+.btn-subs:hover {
+  background: var(--accent-color);
 }
 /* social */
 .social {
@@ -686,7 +717,7 @@ body {
   margin-bottom: 8px;
 }
 
-.visually-hidden {
+.visually-hidden, .checkbox {
   position: absolute;
   white-space: nowrap;
   width: 1px;
