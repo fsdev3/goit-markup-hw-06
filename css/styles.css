@@ -295,9 +295,9 @@ body {
   resize: none;
 }
 .modal-comment {
+  width: 100%;
   height: 120px;
-  padding-left: 12px;
-  padding-top: 8px;
+  padding: 8px 12px;
 }
 .modal-comment::placeholder {
   font-size: 12px;
@@ -336,7 +336,6 @@ body {
 .checkbox:checked + .privacy-text::before {
   background: var(--accent-color);
   border: none;
-  /* background-image: url(../images/sprite.svg#icon-check); */
   background-image: url(../images/check.svg);
   background-repeat: no-repeat;
   background-position: center;
